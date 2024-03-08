@@ -84,6 +84,7 @@ func router() http.Handler {
 	return mux
 }
 
+// logger represents a json implementation extending slog.
 func logger() *slog.Logger {
 	slog.SetLogLoggerLevel(slog.LevelDebug)
 	return slog.New(slog.NewJSONHandler(os.Stdout, &slog.HandlerOptions{
