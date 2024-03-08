@@ -10,6 +10,8 @@
 
 !/.gitignore
 
+!modules.txt
+
 !*.go
 !go.sum
 !go.mod
